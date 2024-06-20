@@ -9,7 +9,7 @@ spring:
       enabled: true
   jpa:
     hibernate:
-      ddl-auto: none  # Disable Hibernate's auto DDL since we are using schema.sql
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:
