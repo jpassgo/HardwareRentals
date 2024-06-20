@@ -254,7 +254,6 @@ class CheckoutServiceTest {
                                                            BigDecimal discountAmount,
                                                            BigDecimal finalCharge) {
         RentalAgreement rentalAgreement = mock(RentalAgreement.class);
-
         when(rentalAgreement.getToolCode()).thenReturn(toolCode);
         when(rentalAgreement.getToolType()).thenReturn(toolType);
         when(rentalAgreement.getToolBrand()).thenReturn(toolBrand);
@@ -267,11 +266,6 @@ class CheckoutServiceTest {
         when(rentalAgreement.getDiscountPercent()).thenReturn(discountPercent);
         when(rentalAgreement.getDiscountAmount()).thenReturn(discountAmount);
         when(rentalAgreement.getFinalCharge()).thenReturn(finalCharge);
-
         return rentalAgreement;
-    }
-
-    @Test
-    void printRentalAgreement() {
     }
 }
